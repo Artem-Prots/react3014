@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.question{
+  font-size: 17px;
+}
+
+.submit{
+  margin-top: 20px;
+}
+
+body{
+  padding: 20px;
+  /*background: #949699;*/
+}

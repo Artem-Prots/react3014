@@ -29,11 +29,20 @@ const Item = () => {
         option3: 'Никто не знает',
         option4: 'Девять',
         correct: 1
+    },
+    {
+        id: 4,
+        description: 'Загадка 4: Растет 3 клёна. На каждом клёне 7 веток. На каждой ветке по 5 орехов. Сколько всего орехов?',
+        option1: '105',
+        option2: '70',
+        option3: 'Ни одного. На клёне орехи не растут',
+        option4: '31',
+        correct: 3
     }
 ];
 
 return (
-    <div>
+    <div className='mainDiv'>
         <h2>Загадки</h2>
         {riddles.map(riddle => (
             <div key={riddle.id}>
@@ -44,6 +53,7 @@ return (
                 <input type="radio" name={riddle.id} id={riddle.id + '.4'}></input>{riddle.option4}
             </div>
         ))}
+        <button type="submit" className="submit">Отправить</button>
     </div>
 );
 }

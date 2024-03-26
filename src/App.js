@@ -5,7 +5,6 @@ function App() {
   return (
     <form>
       <Item/>
-      <button type="submit" className="submit">Отправить</button>
     </form>
   );
 }

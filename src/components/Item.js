@@ -42,6 +42,7 @@ const Item = () => {
 ];
 
 return (
+    <form>
     <div className='mainDiv'>
         <h2>Загадки</h2>
         {riddles.map(riddle => (
@@ -55,7 +56,8 @@ return (
         ))}
         <button type="submit" className="submit">Отправить</button>
     </div>
+    </form>
 );
 }
 
-export default Item
+export default Item;
